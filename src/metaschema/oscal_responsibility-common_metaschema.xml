@@ -76,6 +76,12 @@
       </assembly>
 
       <field ref="remarks" in-xml="WITH_WRAPPER" />
+
+      <assembly ref="system-component" min-occurs="0" max-occurs="unbounded">
+        <use-name>component</use-name>
+        <group-as name="components" in-json="ARRAY" />
+      </assembly>
+
     </model>
 
   </define-assembly>
